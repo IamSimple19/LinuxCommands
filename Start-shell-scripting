@@ -1,0 +1,54 @@
+Shell Scripting Let's do it man
+
+how to use cat commands to merge files and to insert content in files
+
+*cat > filename
+
+How are you
+
+*cat filename
+
+*cat filename1 filename2 > filename3 ----this will merge files into filename3
+
+*date '+DATE:%m-%y%nTIME:%H-%M-%S'  ---this will print date in custom format
+
+
+How to create links between fikes and directories
+
+*ln ilename2 filename1 -------this will create a hard link between files any change in filename1 it will go to filename2
+
+*ln -s filename2 filename1 -----this will create a soft link between files. If filename1 get deleted then filenmae2 will be no longer available to open
+
+How to check the kenal informantion 
+
+*uname -a 
+
+How to chenage file permissions
+
+*chmod 777 filename or directoryname   owner group other_user
+
+4 is for read, 2 is for write and 1 is for execute 
+
+How to check lines, words and characters in a file
+
+*wc filename
+*wc -l filename ---for lines
+*wc -w filename ----for words
+*wc -c filename ----for characters
+
+How to sort a file content
+
+*sort filename
+
+How to convets file latters into ucase and lcase
+
+* dd if=filename1 of=filename2 conv=ucase 
+* dd if=filename1 of=filename2 conv=lcase
+
+
+How to compress files and make them less in size
+
+*compress -v filename
+
+*uncompress filename
+
