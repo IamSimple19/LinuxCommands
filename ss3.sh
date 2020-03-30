@@ -15,9 +15,17 @@ fi
 #Bonus
 #How to use export command in shell
 
-name (){   #Define a function
+name () {   #Define a function
 
 	echo "Hey!! man How are you doing?"
+	OSversion=10.1
+	export OSversion
+	if [ $OSversion == 10.2 ]
+	then
+		echo "This version is supported"
+	else
+		echo "This version is not supported"
+    fi
 }
 
 name  #This is how we call a function just simply name no  use of ()
