@@ -1,0 +1,13 @@
+#How to debug in shell scripting 
+
+#!/bin/bash -x  -----------add this -x to the shebang and it will print all the varibale values in the script
+
+set -x #This will start debug
+
+..... commands
+
+.....  commands
+
+..... commands
+
+set +x #This will turn off debug
