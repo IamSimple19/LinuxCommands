@@ -7,11 +7,11 @@ gitignorefile="`pwd`/.gitignore"
 if [[ ! -e $gitignorefile  ]]; then
 	echo "****Creating gitignore file*******"
 	touch .gitignore
-	echo "gitpush.sh" >> .gitignore
+	echo "gitpush.sh" > .gitignore
 else
 	echo "*******checking gitignore file*******"
 	echo "**********File already exists********"
-	echo "gitpush.sh" >> .gitignore
+	echo "gitpush.sh" > .gitignore
 fi
 
 read -p "Do you want to commit this file:" answer
