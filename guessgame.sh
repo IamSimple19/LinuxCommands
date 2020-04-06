@@ -4,7 +4,7 @@ number=$(( $RANDOM % 10 ))   #This assures the number is less than 100
 
 guess=     #defined empty var
 
-until [[ $guess -eq $number ]]; do #Loop 
+until [[ $guess -eq $number ]]; do #Loop untill
 	read -p "Enter your guess:" guess
 	if [[ $guess -eq $IFS ]]; then
 		echo "Please enter a number"
