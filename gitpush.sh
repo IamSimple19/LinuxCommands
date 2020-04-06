@@ -1,6 +1,6 @@
 #!/bin/bash
 
-newfile=$( ls -t | head -n 2 | grep .sh ) #this will fetch the latest .sh file
+newfile=$( ls -t | head -n 1 | grep .sh ) #this will fetch the latest .sh file
 
 echo "This file is latest $newfile"
 gitignorefile="`pwd`/.gitignore"
