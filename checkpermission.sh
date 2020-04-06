@@ -4,7 +4,7 @@ file="`pwd`/$1"
 if [[ -e $file ]]
   then
      echo "**************checking file if exists****************"
-     echo "*********************found file***********************"
+     echo "*********************found file**********************"
      if [[ -x $file ]]
       then
        echo "You have permission to execute $file"
