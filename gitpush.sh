@@ -18,6 +18,7 @@ read -p "Do you want to commit this file:" answer
 if [[ $answer = [Yy] ]]; then
 	echo "******Git Process is Started********"
     git add $newfile
+    git status
     read -p "Enter your commit message:" commitmsg
     git commit -m "$commitmsg"
 elif [[ $answer = [Nn] ]]; then
