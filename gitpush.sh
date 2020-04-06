@@ -21,6 +21,7 @@ if [[ $answer = [Yy] ]]; then
     git status
     read -p "Enter your commit message:" commitmsg
     git commit -m "$commitmsg"
+    git push origin master
 elif [[ $answer = [Nn] ]]; then
 	echo "******Git Process is stopped******"
 	echo "*********Nothing to checkin*******"
