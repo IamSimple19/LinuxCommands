@@ -11,6 +11,7 @@ if [[ ! -e $gitignorefile  ]]; then
 else
 	echo "*******checking gitignore file*******"
 	echo "**********File already exists********"
+	echo "gitpush.sh" >> .gitignore
 fi
 
 read -p "Do you want to commit this file:" answer
