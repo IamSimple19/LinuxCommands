@@ -1,6 +1,6 @@
 #!/bin/bash
 
-newfile=$( ls -t | head -n 2 | grep .sh ) #this will fetch the latest .sh file
+newfile=$( ls -t | head -n 1 | grep .sh ) #this will fetch the latest .sh file
 
 echo "This file is latest $newfile"
 gitignorefile="`pwd`/.gitignore"
@@ -16,8 +16,13 @@ fi
 
 read -p "Do you want to commit this file:" answer
 if [[ $answer = [Yy] ]]; then
+	echo "************************************"
 	echo "******Git Process is Started********"
+	echo "*************************************"
+	echo "*************************************"
     git add $newfile
+    echo "******This file is added $newfile ***"
+    echo "*************************************"
     git status
     read -p "Enter your commit message:" commitmsg
     git commit -m "$commitmsg"
