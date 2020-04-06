@@ -12,6 +12,7 @@ if [[ $answer = [Yy] ]]; then
     git commit -m "$commitmsg"
 elif [[ $answer = [Nn] ]]; then
 	echo "******Git Process is stopped******"
+	echo "*********Nothing to checkin*******"
 
 fi
 
